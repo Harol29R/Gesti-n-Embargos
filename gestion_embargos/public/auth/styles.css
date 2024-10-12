@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ccdbf2; /* Color de fondo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.container {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%; /* Ocupa el 100% del contenedor */
+}
+
+h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre campos del formulario */
+}
+
+label {
+    font-weight: bold; /* Texto en negrita para las etiquetas */
+}
+
+input, button {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    padding: 10px; /* Espacio interno */
+    margin-top: 5px; /* Espacio encima del campo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+}
+
+input:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    outline: none; /* Elimina el contorno por defecto */
+}
+
+button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+.alert {
+    color: red; /* Color del texto de alerta */
+    text-align: center; /* Centrar el texto de alerta */
+    margin-bottom: 20px; /* Espacio debajo de la alerta */
+}
+
+.btn-link {
+    display: block; /* Hace que los enlaces ocupen toda la línea */
+    text-align: center; /* Centrar el texto del enlace */
+    margin-top: 10px; /* Espacio encima del enlace */
+}

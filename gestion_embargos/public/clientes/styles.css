@@ -1,0 +1,196 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+    min-height: 100vh; /* Altura mínima para llenar la pantalla */
+    overflow-x: hidden; /* Eliminar el scroll horizontal */
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 30px;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+/* Sección del usuario */
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sidebar-user i {
+    margin-right: 10px;
+    font-size: 50px;
+    color: #007bff;
+}
+
+.sidebar-user p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Títulos de las secciones */
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Elementos de la lista */
+.sidebar-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-items li {
+    margin: 20px 0;
+}
+
+.sidebar-items li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-items li a:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Content */
+.content {
+    margin-left: 300px; /* Aumentado para que el contenido no se superponga al menú */
+    padding: 20px;
+    width: calc(100% - 300px); /* Ajusta el ancho del contenido */
+}
+
+.content h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Formulario de gestión */
+form {
+    background-color: #5063c9; /* Fondo igual al color del menú */
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white; /* Texto en blanco para destacar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: white; /* Mantener etiquetas en blanco */
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa; /* Fondo claro para contrastar */
+    color: #333; /* Texto oscuro para mejor legibilidad */
+}
+
+form button {
+    background-color: #ddd;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(225, 225, 225)
+}
+
+/* Tabla de clientes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Fondo claro para contrastar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #5063c9; /* Cabezal con el color del menú */
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #e9ecef; /* Alternar con un gris claro */
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.dashboard-footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
